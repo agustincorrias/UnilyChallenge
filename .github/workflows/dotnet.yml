@@ -26,4 +26,4 @@ jobs:
     - name: Build
       run: dotnet build
     - name: Test
-      run: dotnet test --settings "./GitHubActions.RunSettings"
+      run: dotnet test --settings "./GitHubActions.RunSettings" --logger "console;verbosity=detailed"
