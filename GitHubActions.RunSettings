@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RunSettings>
+  <NUnit>
+    <NumberOfTestWorkers>0</NumberOfTestWorkers>
+  </NUnit>
+  <TestRunParameters>
+    <Parameter name="browser" value="chromium" />
+    <Parameter name="headless" value="true" />
+  </TestRunParameters>
+</RunSettings>

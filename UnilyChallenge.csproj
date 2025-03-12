@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+
+    <!-- Versions-->
+    <NUnitVersion>4.0.1</NUnitVersion>
+    <NUnitAllureVersion>2.12.1</NUnitAllureVersion>
+    <MicrosoftPlaywrightVersion>1.45.1</MicrosoftPlaywrightVersion>
+    <MicrosoftPlaywrightNUnitVersion>1.45.1</MicrosoftPlaywrightNUnitVersion>
+    <MicrosoftNETTestSdkVersion>17.4.0</MicrosoftNETTestSdkVersion>
+    <NUnit3TestAdapterVersion>4.5.0</NUnit3TestAdapterVersion>
+    <NUnitAnalyzersVersion>3.3.0</NUnitAnalyzersVersion>
+    <SerilogVersion>3.1.1</SerilogVersion>
+    <SerilogSettingsConfigurationVersion>8.0.0</SerilogSettingsConfigurationVersion>
+    <SerilogSinksConsoleVersion>5.0.1</SerilogSinksConsoleVersion>
+    <SerilogSinksFileVersion>5.0.0</SerilogSinksFileVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NUnit" Version="$(NUnitVersion)" />
+    <PackageReference Include="Allure.NUnit" Version="$(NUnitAllureVersion)" />
+    <PackageReference Include="Microsoft.Playwright" Version="$(MicrosoftPlaywrightVersion)" />
+    <PackageReference Include="Microsoft.Playwright.NUnit" Version="$(MicrosoftPlaywrightNUnitVersion)" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="$(MicrosoftNETTestSdkVersion)" />
+    <PackageReference Include="NUnit3TestAdapter" Version="$(NUnit3TestAdapterVersion)" />
+    <PackageReference Include="NUnit.Analyzers" Version="$(NUnitAnalyzersVersion)" />
+    <PackageReference Include="Serilog" Version="$(SerilogVersion)" />
+    <PackageReference Include="Serilog.Settings.Configuration" Version="$(SerilogSettingsConfigurationVersion)" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="$(SerilogSinksConsoleVersion)" />
+    <PackageReference Include="Serilog.Sinks.File" Version="$(SerilogSinksFileVersion)" />
+  </ItemGroup>
+
+</Project>
